@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="basic">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="basic2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- activity main -->
+    <style name="search_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_48</item>
+        <item name="android:layout_below">@+id/progressBar</item>
+        <item name="android:layout_margin">@dimen/dp_8</item>
+        <item name="android:queryHint">"Enter book title"</item>
+    </style>
+
+    <style name="recycler_view_layout" parent="basic2">
+        <item name="android:layout_below">@+id/search_view</item>
+        <item name="android:layout_margin">@dimen/dp_8</item>
+    </style>
+
+    <style name="empty_tv" parent="basic">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="recycler" parent="basic2">
+        <item name="android:padding">@dimen/dp_8</item>
+    </style>
+
+    <!-- list item -->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/grey</item>
+        <item name="colorControlActivated">@color/gold</item>
+    </style>
+
+    <style name="card_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/dp_180</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dp_16</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="book_layout" parent="basic2">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/dp_1</item>
+    </style>
+
+    <style name="thumbnail" parent="basic">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginRight">@dimen/dp_16</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="text_layout" parent="basic">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_below">@+id/imageView</item>
+        <item name="android:layout_margin">@dimen/dp_10</item>
+        <item name="android:layout_alignLeft">@+id/imageView</item>
+    </style>
+
+    <style name="title" parent="basic">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@dimen/int_2</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="author" parent="basic">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">@dimen/int_1</item>
+    </style>
+
+
+</resources>
